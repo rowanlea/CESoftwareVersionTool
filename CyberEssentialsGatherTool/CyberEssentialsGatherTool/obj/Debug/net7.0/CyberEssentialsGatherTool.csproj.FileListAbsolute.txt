@@ -1,0 +1,15 @@
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\CyberEssentialsGatherTool.exe
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\CyberEssentialsGatherTool.deps.json
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\CyberEssentialsGatherTool.runtimeconfig.json
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\CyberEssentialsGatherTool.dll
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\CyberEssentialsGatherTool.pdb
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.csproj.AssemblyReference.cache
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.AssemblyInfoInputs.cache
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.AssemblyInfo.cs
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.csproj.CoreCompileInputs.cache
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.dll
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\refint\CyberEssentialsGatherTool.dll
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.pdb
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.genruntimeconfig.cache
+C:\Users\Rowan\source\repos\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\ref\CyberEssentialsGatherTool.dll

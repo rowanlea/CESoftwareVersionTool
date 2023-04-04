@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberEssentialsGatherTool", "CyberEssentialsGatherTool\CyberEssentialsGatherTool.csproj", "{FCA79A28-0F9A-4913-A97D-873085D5E548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberEssentialsGatherToolTests", "CyberEssentialsGatherToolTests\CyberEssentialsGatherToolTests.csproj", "{2DD88E68-364D-4874-9E80-D6F453D39A0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA79A28-0F9A-4913-A97D-873085D5E548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA79A28-0F9A-4913-A97D-873085D5E548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA79A28-0F9A-4913-A97D-873085D5E548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA79A28-0F9A-4913-A97D-873085D5E548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD88E68-364D-4874-9E80-D6F453D39A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD88E68-364D-4874-9E80-D6F453D39A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD88E68-364D-4874-9E80-D6F453D39A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD88E68-364D-4874-9E80-D6F453D39A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30E41566-1828-4802-AEE1-BA784A689AE7}
+	EndGlobalSection
+EndGlobal
