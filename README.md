@@ -19,7 +19,7 @@ First generate the input it needs for your appropriate operating system (choose 
 (the aim with the JSON file is to make it transportable for further use, when I've added the batch gathering and output there will be a nicer output you can directly use as an appendix).
 
 ### For Windows
-1. Right click the WindowsSoftwareVersion.ps1 script.
+1. Right click the WindowsSoftwareVersion.ps1 script in the repo.
 2. Click on "run with powershell".
 3. It might ask you about an execution policy change, you can just enter "n".
 4. Enter your full name when prompted.
