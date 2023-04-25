@@ -20,6 +20,10 @@ namespace CyberEssentialsGatherTool
 
                 WindowsParser parser = new WindowsParser();
                 profile = parser.ParseFile(fileName, fileData);
+
+                string profileJson = JsonSerializer.Serialize(profile);
+                string newFileName = $"{profile.Name}.json";
+                File.WriteAllText(newFileName, profileJson);
             }
             else // Mac
             {
@@ -28,11 +32,13 @@ namespace CyberEssentialsGatherTool
 
                 MacParser parser = new MacParser();
                 profile = parser.ParseFile(fileData);
+
+                string profileJson = JsonSerializer.Serialize(profile);
+                string newFileName = $"Desktop/{profile.Name}.json";
+                File.WriteAllText(newFileName, profileJson);
             }
 
-            string profileJson = JsonSerializer.Serialize(profile);
-            string newFileName = $"Desktop/{profile.Name}.json";
-            File.WriteAllText(newFileName, profileJson);
+            
         }
     }
 }
