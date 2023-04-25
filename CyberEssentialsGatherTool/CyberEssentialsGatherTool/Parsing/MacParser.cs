@@ -53,20 +53,12 @@ namespace CyberEssentialsGatherTool.Parsing
 
         private XmlElement GetItemsFromElement(XmlElement applicationCategory)
         {
-            bool returnNext = false;
-
             foreach (XmlElement field in applicationCategory.ChildNodes)
             {
-                if(returnNext)
-                {
-                    return field;
-                }
                 if (field.InnerText == "_items")
                 {
-                    returnNext = true;
+                    return (XmlElement)field.NextSibling;
                 }
-
-                // can be replaced with return field.NextSibling
             }
             return null;
         }

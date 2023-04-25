@@ -6,6 +6,9 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
 {
     internal class ParsingTests
     {
+        // NOTE: These tests will fail, the "quick and crude" approach I took didn't intend for the project to be public.
+        // I will fix these at some point, but feel free to edit the file paths for your own use if you wish to use the tests.
+
         [Test]
         public void ParseWindowsFileData()
         {

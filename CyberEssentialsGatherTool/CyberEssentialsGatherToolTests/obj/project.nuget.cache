@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+sudrxirliiRRe5J3rBb+Z7mMuHwB50H1TK3aAsujKOPmpimOPcpaAwkH4/r4rG7V7f+lKZczLGRZqg490Covg==",
+  "dgSpecHash": "IhFTjeeUUVqmTNXq0Mb3qIRiQ1NT1CFjcC95D3yOQOcG3TcXgeJjfuyyxF26XUPw4xRAoHzCI2bsstqOMjfwoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rowan\\source\\repos\\CyberEssentialsGatherTool\\CyberEssentialsGatherToolTests\\CyberEssentialsGatherToolTests.csproj",
+  "projectFilePath": "C:\\Users\\Rowan\\source\\repos\\CoduranceCEGatherTool\\CyberEssentialsGatherTool\\CyberEssentialsGatherToolTests\\CyberEssentialsGatherToolTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rowan\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Rowan\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",

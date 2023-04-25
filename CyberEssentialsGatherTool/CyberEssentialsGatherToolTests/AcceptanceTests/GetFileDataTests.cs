@@ -2,7 +2,7 @@ using CyberEssentialsGatherTool.FileManagement;
 
 namespace CyberEssentialsGatherToolTests.AcceptanceTests
 {
-    public class Tests
+    public class GetFileDataTests
     {
         [Test]
         public void GetWindowsFilesInPath()
