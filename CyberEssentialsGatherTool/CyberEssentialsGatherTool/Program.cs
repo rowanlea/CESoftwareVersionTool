@@ -24,14 +24,14 @@ namespace CyberEssentialsGatherTool
             else // Mac
             {
                 MacFileReader reader = new MacFileReader();
-                var fileData = reader.ReadFile(fileName);
+                var fileData = reader.ReadFile($"Desktop/{fileName}");
 
                 MacParser parser = new MacParser();
                 profile = parser.ParseFile(fileData);
             }
 
             string profileJson = JsonSerializer.Serialize(profile);
-            string newFileName = $"{profile.Name}.json";
+            string newFileName = $"Desktop/{profile.Name}.json";
             File.WriteAllText(newFileName, profileJson);
         }
     }
