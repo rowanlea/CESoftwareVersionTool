@@ -1,4 +1,4 @@
-﻿namespace CyberEssentialsGatherTool
+﻿namespace CyberEssentialsGatherTool.Model
 {
     public class SoftwareInfo
     {

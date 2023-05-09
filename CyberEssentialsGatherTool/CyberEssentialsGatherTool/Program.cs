@@ -1,4 +1,5 @@
 ﻿using CyberEssentialsGatherTool.FileManagement;
+using CyberEssentialsGatherTool.Model;
 using CyberEssentialsGatherTool.Parsing;
 using System.Text.Json;
 
@@ -8,15 +9,35 @@ namespace CyberEssentialsGatherTool
     {
         static void Main(string[] args)
         {
+            ParseFileToJson();
+            //UseGather();
+        }
+
+        private static void UseGather()
+        {
+            string baseDirectory = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Real\\";
+
+            List<UserProfile> users = new List<UserProfile>();
+
+            Gather gather = new(users);
+            gather.AppendWindowsFiles(baseDirectory + "Windows");
+            gather.AppendMacFiles(baseDirectory + "Mac");
+            gather.AppendJsonFiles(baseDirectory + "Json");
+
+            gather.VerifyProfiles(true, false);
+        }
+
+        private static void ParseFileToJson()
+        {
             Console.WriteLine("Please enter the name of the file you wish to parse (including file extension):");
             string fileName = Console.ReadLine();
 
             UserProfile profile;
+            FileReader reader = new FileReader();
 
             if (fileName.EndsWith(".csv")) // Windows
             {
-                WindowsFileReader reader = new WindowsFileReader();
-                var fileData = reader.ReadFile(fileName);
+                var fileData = reader.ReadFileLines(fileName);
 
                 WindowsParser parser = new WindowsParser();
                 profile = parser.ParseFile(fileName, fileData);
@@ -27,8 +48,7 @@ namespace CyberEssentialsGatherTool
             }
             else // Mac
             {
-                MacFileReader reader = new MacFileReader();
-                var fileData = reader.ReadFile($"Desktop/{fileName}");
+                var fileData = reader.ReadFileText($"Desktop/{fileName}");
 
                 MacParser parser = new MacParser();
                 profile = parser.ParseFile(fileData);
@@ -37,8 +57,6 @@ namespace CyberEssentialsGatherTool
                 string newFileName = $"Desktop/{profile.Name}.json";
                 File.WriteAllText(newFileName, profileJson);
             }
-
-            
         }
     }
 }

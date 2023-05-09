@@ -1,5 +1,5 @@
-﻿using CyberEssentialsGatherTool;
-using CyberEssentialsGatherTool.FileManagement;
+﻿using CyberEssentialsGatherTool.FileManagement;
+using CyberEssentialsGatherTool.Model;
 using CyberEssentialsGatherTool.Parsing;
 
 namespace CyberEssentialsGatherToolTests.AcceptanceTests
@@ -14,8 +14,8 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
         {
             // Arrange
             string dataPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Windows\\Rowan Lea Test1#Microsoft Windows 10 Pro#10.0.19044.csv";
-            WindowsFileReader reader = new WindowsFileReader();
-            var fileData = reader.ReadFile(dataPath);
+            FileReader reader = new FileReader();
+            var fileData = reader.ReadFileLines(dataPath);
 
             WindowsParser parser = new WindowsParser();
 
@@ -27,7 +27,7 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
             profile.OS.Should().Be("Microsoft Windows 10 Pro");
             profile.OSVersion.Should().Be("10.0.19044");
 
-            profile.Software.Count.Should().Be(505);
+            profile.Software.Count.Should().Be(504);
             profile.Software[0].Name.Should().Be("Python 3.9.13 pip Bootstrap (64-bit)");
             profile.Software[0].Vendor.Should().Be("Python Software Foundation");
             profile.Software[0].Version.Should().Be("3.9.13150.0");
@@ -38,8 +38,8 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
         {
             // Arrange
             string dataPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Mac\\MacBook Air Test1.spx";
-            MacFileReader reader = new MacFileReader();
-            var fileData = reader.ReadFile(dataPath);
+            FileReader reader = new FileReader();
+            var fileData = reader.ReadFileText(dataPath);
 
             MacParser parser = new MacParser();
 
@@ -47,7 +47,7 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
             UserProfile profile = parser.ParseFile(fileData);
 
             // Assert
-            profile.Software.Count.Should().Be(318);
+            profile.Software.Count.Should().Be(309);
             profile.Software[0].Name.Should().Be("GarageBand");
             profile.Software[0].Version.Should().Be("10.4.8");
         }
@@ -57,8 +57,8 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
         {
             // Arrange
             string dataPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Mac\\MacBook Air Test1.spx";
-            MacFileReader reader = new MacFileReader();
-            var fileData = reader.ReadFile(dataPath);
+            FileReader reader = new FileReader();
+            var fileData = reader.ReadFileText(dataPath);
 
             MacParser parser = new MacParser();
 

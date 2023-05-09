@@ -14,18 +14,18 @@ The output from this will give you every piece of software installed on the syst
 - compiling batch information so I can output it in a more condense and readable format
 
 ## How to use
-First generate the input it needs for your appropriate operating system (choose from below). After that you will have a file generated. You can take that file, and put it in the same directory as the executable this project outputs, and run the executable to generate a JSON file.
+First generate the input it needs for your appropriate operating system (choose from below). After that you will have a file generated. You can take that file, and put it in the same directory as the executable this project builds to (for Windows), or just on your desktop (for Mac), and run the executable to generate a JSON file.
 
 (the aim with the JSON file is to make it transportable for further use, when I've added the batch gathering and output there will be a nicer output you can directly use as an appendix).
 
-### For Windows
+### Getting Initial Windows File
 1. Right click the WindowsSoftwareVersion.ps1 script in the repo.
 2. Click on "run with powershell".
 3. It might ask you about an execution policy change, you can just enter "n".
 4. Enter your full name when prompted.
 5. Give it a couple of minutes, and then you should have a file in the same location you ran the script from in the format: NAME#OPERATINGSYSTEM#VERSION.csv.
 
-### For Mac
+### Getting Initial Mac File
 1. Click the apple button in the top left of your machine.
 2. Click "about this mac".
 3. On the overview screen click on the "System report..." button.

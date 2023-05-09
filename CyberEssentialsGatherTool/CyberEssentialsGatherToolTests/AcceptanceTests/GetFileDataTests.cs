@@ -12,7 +12,7 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
             string firstExpectedPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Windows\\Rowan Lea Test1#Microsoft Windows 10 Pro#10.0.19044.csv";
             string secondExpectedPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Windows\\Rowan Lea Test2#Microsoft Windows 10 Pro#10.0.19044.csv";
 
-            FileReader reader = new WindowsFileReader();
+            FileReader reader = new FileReader();
 
             // Act
             var files = reader.GetAllFilesInFolder(containingFolder);
@@ -28,10 +28,10 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
         {
             // Arrange
             string containingFolder = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Windows\\Rowan Lea Test1#Microsoft Windows 10 Pro#10.0.19044.csv";
-            WindowsFileReader reader = new WindowsFileReader();
+            FileReader reader = new FileReader();
 
             // Act
-            var fileData = reader.ReadFile(containingFolder);
+            var fileData = reader.ReadFileLines(containingFolder);
 
             // Assert
             fileData.Count().Should().Be(506);
@@ -47,7 +47,7 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
             string firstExpectedPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Mac\\MacBook Air Test1.spx";
             string secondExpectedPath = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Mac\\MacBook Air Test2.spx";
 
-            FileReader reader = new MacFileReader();
+            FileReader reader = new FileReader();
 
             // Act
             var files = reader.GetAllFilesInFolder(containingFolder);
@@ -63,10 +63,10 @@ namespace CyberEssentialsGatherToolTests.AcceptanceTests
         {
             // Arrange
             string containingFolder = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Mac\\MacBook Air Test1.spx";
-            MacFileReader reader = new MacFileReader();
+            FileReader reader = new FileReader();
 
             // Act
-            var fileData = reader.ReadFile(containingFolder);
+            var fileData = reader.ReadFileText(containingFolder);
 
             // Assert
             fileData.Should().NotBeNull();

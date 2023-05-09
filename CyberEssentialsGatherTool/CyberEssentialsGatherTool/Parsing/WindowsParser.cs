@@ -1,4 +1,6 @@
-﻿namespace CyberEssentialsGatherTool.Parsing
+﻿using CyberEssentialsGatherTool.Model;
+
+namespace CyberEssentialsGatherTool.Parsing
 {
     public class WindowsParser
     {
@@ -11,6 +13,12 @@
             {
                 fileData[i] = fileData[i].Replace("\"", "");
                 var dataParts = fileData[i].Split(',');
+
+                if(string.IsNullOrEmpty(dataParts[1]))
+                {
+                    continue; // Software with no versions assumed to be proprietary/dev
+                }
+
                 profile.Software.Add(new SoftwareInfo
                 {
                     Name = dataParts[0],

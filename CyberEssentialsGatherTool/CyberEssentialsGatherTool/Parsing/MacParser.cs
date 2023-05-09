@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using CyberEssentialsGatherTool.Model;
 
 namespace CyberEssentialsGatherTool.Parsing
 {
@@ -82,7 +83,10 @@ namespace CyberEssentialsGatherTool.Parsing
                     }
                 }
 
-                profile.Software.Add(new SoftwareInfo { Name = name, Version = version});
+                if (!string.IsNullOrEmpty(version))
+                {
+                    profile.Software.Add(new SoftwareInfo { Name = name, Version = version }); // Software with no versions assumed to be proprietary/dev
+                }
             }
         }
 
