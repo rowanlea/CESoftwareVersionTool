@@ -1,6 +1,5 @@
 ﻿using CyberEssentialsGatherTool.Model;
 using System.Text.Json;
-using System.Xml;
 
 namespace CyberEssentialsGatherTool.Parsing
 {

@@ -7,16 +7,44 @@ namespace CyberEssentialsGatherTool
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            ParseFileToJson();
-            //UseGather();
-        }
-
-        private static void UseGather()
+       static void Main(string[] args)
         {
             string baseDirectory = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Real\\";
+            //TestGather(baseDirectory);
+            //ParseFileToJson();
+            //CheckCurrentEmyployees(baseDirectory);
+            UseGather(baseDirectory);
+        }
 
+        private static void CheckCurrentEmyployees(string baseDirectory)
+        {
+            FileReader reader = new FileReader();
+            var employees = reader.ReadFileLines($"{baseDirectory}\\EmployeeList.txt").ToList();
+
+            employees.Sort();
+
+            foreach (var name in employees)
+            {
+                Console.WriteLine(name);
+            }
+        }
+
+        private static void TestGather(string baseDirectory)
+        {
+            List<UserProfile> users = GetUserData(baseDirectory);
+
+            List<string> names = users.Select(x => x.Name).ToList();
+
+            names.Sort();
+
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }
+        }
+
+        private static List<UserProfile> GetUserData(string baseDirectory)
+        {
             List<UserProfile> users = new List<UserProfile>();
 
             Gather gather = new(users);
@@ -25,6 +53,17 @@ namespace CyberEssentialsGatherTool
             gather.AppendJsonFiles(baseDirectory + "Json");
 
             gather.VerifyProfiles(true, false);
+            return users;
+        }
+
+        private static void UseGather(string baseDirectory)
+        {
+            List<UserProfile> users = GetUserData(baseDirectory);
+
+            List<CombinedSoftwareVersions> combinedSoftwareVersions = SoftwareVersionCalculator.CalculateSoftware(users);
+
+            List<OSInfo> osVersions = OSVersionCalculator.CalculateOSVersion(users);
+
         }
 
         private static void ParseFileToJson()

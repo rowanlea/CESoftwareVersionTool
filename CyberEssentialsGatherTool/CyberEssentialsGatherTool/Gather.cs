@@ -4,7 +4,7 @@ using CyberEssentialsGatherTool.Parsing;
 
 namespace CyberEssentialsGatherTool
 {
-    internal class Gather
+    public class Gather
     {
         private List<UserProfile> _profiles;
 
