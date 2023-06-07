@@ -13,9 +13,9 @@ namespace CyberEssentialsGatherTool
         {
             string baseDirectory = "C:\\Users\\Rowan\\CyberEssentialsFiles\\Real\\";
             //TestGather(baseDirectory);
-            //ParseFileToJson();
+            ParseFileToJson();
             //CheckCurrentEmyployees(baseDirectory);
-            UseGather(baseDirectory);
+            //UseGather(baseDirectory);
         }
 
         private static void CheckCurrentEmyployees(string baseDirectory)
@@ -67,7 +67,7 @@ namespace CyberEssentialsGatherTool
             List<OSInfo> osVersions = OSVersionCalculator.CalculateOSVersion(users);
 
             SoftwareSpreadsheetWriter.WriteToSpreadsheet(combinedSoftwareVersions, baseDirectory);
-            //OSSpreadsheetWriter.WriteToSpreadsheet(osVersions, baseDirectory);
+            OSSpreadsheetWriter.WriteToSpreadsheet(osVersions, baseDirectory);
         }
 
         private static void ParseFileToJson()
