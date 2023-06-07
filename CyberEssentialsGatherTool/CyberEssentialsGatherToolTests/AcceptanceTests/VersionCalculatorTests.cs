@@ -1,5 +1,5 @@
 using CyberEssentialsGatherTool;
-using CyberEssentialsGatherTool.FileManagement;
+using CyberEssentialsGatherTool.Calculators;
 using CyberEssentialsGatherTool.Model;
 
 namespace CyberEssentialsGatherToolTests.AcceptanceTests

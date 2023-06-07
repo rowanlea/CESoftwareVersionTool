@@ -1,6 +1,8 @@
-﻿using CyberEssentialsGatherTool.FileManagement;
+﻿using CyberEssentialsGatherTool.Calculators;
+using CyberEssentialsGatherTool.FileManagement;
 using CyberEssentialsGatherTool.Model;
 using CyberEssentialsGatherTool.Parsing;
+using CyberEssentialsGatherTool.Spreadsheet;
 using System.Text.Json;
 
 namespace CyberEssentialsGatherTool
@@ -64,6 +66,8 @@ namespace CyberEssentialsGatherTool
 
             List<OSInfo> osVersions = OSVersionCalculator.CalculateOSVersion(users);
 
+            SoftwareSpreadsheetWriter.WriteToSpreadsheet(combinedSoftwareVersions, baseDirectory);
+            //OSSpreadsheetWriter.WriteToSpreadsheet(osVersions, baseDirectory);
         }
 
         private static void ParseFileToJson()

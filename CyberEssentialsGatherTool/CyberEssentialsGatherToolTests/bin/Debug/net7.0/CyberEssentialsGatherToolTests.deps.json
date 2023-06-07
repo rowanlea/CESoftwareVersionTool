@@ -20,6 +20,14 @@
           "CyberEssentialsGatherToolTests.dll": {}
         }
       },
+      "BitMiracle.LibTiff.NET/2.4.649": {
+        "runtime": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "assemblyVersion": "2.4.649.0",
+            "fileVersion": "2.4.649.0"
+          }
+        }
+      },
       "coverlet.collector/3.1.2": {},
       "FluentAssertions/6.10.0": {
         "dependencies": {
@@ -29,6 +37,30 @@
           "lib/net6.0/FluentAssertions.dll": {
             "assemblyVersion": "6.10.0.0",
             "fileVersion": "6.10.0.0"
+          }
+        }
+      },
+      "IronSoftware.System.Drawing/2023.6.1": {
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.649",
+          "SixLabors.ImageSharp": "3.0.0",
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net60/IronSoftware.Drawing.Common.dll": {
+            "assemblyVersion": "2023.6.1.0",
+            "fileVersion": "2023.6.1.0"
+          }
+        }
+      },
+      "IronXL.Excel/2023.6.4": {
+        "dependencies": {
+          "IronSoftware.System.Drawing": "2023.6.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "assemblyVersion": "2023.6.4.0",
+            "fileVersion": "2023.6.4.0"
           }
         }
       },
@@ -373,6 +405,14 @@
       },
       "NUnit.Analyzers/3.3.0": {},
       "NUnit3TestAdapter/4.2.1": {},
+      "SixLabors.ImageSharp/3.0.0": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -487,6 +527,7 @@
           "System.Threading": "4.0.11"
         }
       },
+      "System.Memory/4.5.5": {},
       "System.ObjectModel/4.0.12": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -693,6 +734,9 @@
         }
       },
       "CyberEssentialsGatherTool/1.0.0": {
+        "dependencies": {
+          "IronXL.Excel": "2023.6.4"
+        },
         "runtime": {
           "CyberEssentialsGatherTool.dll": {}
         }
@@ -704,6 +748,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BitMiracle.LibTiff.NET/2.4.649": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
+      "path": "bitmiracle.libtiff.net/2.4.649",
+      "hashPath": "bitmiracle.libtiff.net.2.4.649.nupkg.sha512"
     },
     "coverlet.collector/3.1.2": {
       "type": "package",
@@ -718,6 +769,20 @@
       "sha512": "sha512-Da3YsiRDnOHKBfxutjnupL1rOX0K/jnG6crn5AgwukeqZ/yi+HNCOFshic01ke0ztZFWzpfQMXH8fO9aAbG0Gw==",
       "path": "fluentassertions/6.10.0",
       "hashPath": "fluentassertions.6.10.0.nupkg.sha512"
+    },
+    "IronSoftware.System.Drawing/2023.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rm1/5s3Ge9jckyrzOVrauwp4gGdm6U4AqkTcletmvYWdRhq8Pg0dXrxBM4fHnoXk4UDuY4n8per/Lun9hVkdbw==",
+      "path": "ironsoftware.system.drawing/2023.6.1",
+      "hashPath": "ironsoftware.system.drawing.2023.6.1.nupkg.sha512"
+    },
+    "IronXL.Excel/2023.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zcOq7jw6SfYeKBiB3g1ne8oQpLfYMrk9levO28Bq0Z+VwAB7J9OYzlr9/YTBrhI1aQx0w52NKeM6Pz6R+Fv0NQ==",
+      "path": "ironxl.excel/2023.6.4",
+      "hashPath": "ironxl.excel.2023.6.4.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.3.2": {
       "type": "package",
@@ -810,6 +875,13 @@
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
+    "SixLabors.ImageSharp/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ETEHRfUAn/rExqdmj2GDayPkW9zr3BruO9S4WF9ULpWmdydewIjoJqinbQc+o4DsM3X0wGZPyJLlj6N3uxV/aw==",
+      "path": "sixlabors.imagesharp/3.0.0",
+      "hashPath": "sixlabors.imagesharp.3.0.0.nupkg.sha512"
+    },
     "System.Collections/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -886,6 +958,13 @@
       "sha512": "sha512-I+y02iqkgmCAyfbqOmSDOgqdZQ5tTj80Akm5BPSS8EeB0VGWdy6X1KCoYe8Pk6pwDoAKZUOdLVxnTJcExiv5zw==",
       "path": "system.linq.expressions/4.1.0",
       "hashPath": "system.linq.expressions.4.1.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.ObjectModel/4.0.12": {
       "type": "package",

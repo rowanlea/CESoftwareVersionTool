@@ -43,3 +43,8 @@ C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\Cybe
 C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.pdb
 C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.genruntimeconfig.cache
 C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\ref\CyberEssentialsGatherTool.dll
+C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\BitMiracle.LibTiff.NET.dll
+C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\IronSoftware.Drawing.Common.dll
+C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\IronXL.dll
+C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\bin\Debug\net7.0\SixLabors.ImageSharp.dll
+C:\Users\Rowan\source\repos\CoduranceCEGatherTool\CyberEssentialsGatherTool\CyberEssentialsGatherTool\obj\Debug\net7.0\CyberEssentialsGatherTool.csproj.CopyComplete

@@ -134,6 +134,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2023.6.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
